@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.static {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: static;
+    left: 100px;
+    top: 100px;
+}
+
+.relative {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.absolute {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.fixed {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: sticky;
+    top: 100px;
+    left: 100px;
+    z-index: -1;
+}
+
+.container {
+    height: 300px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.rotate {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-color: red;
+    /* transform: rotateX(45deg); */
+    /* transform: rotateY(45deg); */
+    /* transform: rotateZ(-45deg); */
+    /* transform: rotate(45deg); */
+}
+
+.scale {
+    height: 350px;
+    width: 500px;
+    margin: 50px auto;
+    background-color: cadetblue;
+    /* transform: scaleX(2.5); */
+    /* transform: scaleY(.5); */
+    /* transform: scale(.5); */
+    transform: scale(1.5, 0.8);
+}
+
+.translate {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background-color: darkgreen;
+    /* transform: translateX(-400px); */
+    /* transform: translateY(400px); */
+    /* transform: translate(400px); */
+    transform: translate(400px, 300px);
+}
+
+.skew {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background-color: darkgreen;
+    /* transform: skewX(45deg); */
+    /* transform: skewY(45deg); */
+    /* transform: skew(45deg); */
+    transform: skew(45deg, 45deg);
+}
