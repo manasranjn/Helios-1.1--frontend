@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: brown;
+    color: white;
+    height: 500px;
+    width: 800px;
+}
+
+.box h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+.container {
+    display: flex;
+    gap: 50px;
+    padding: 50px 150px;
+}
+
+.left-content {
+    width: 60%;
+}
+
+.left-content h1 {
+    width: 70%;
+    font-size: 45px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.left-content p {
+    width: 90%;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.left-content button {
+    padding: 15px 45px;
+    border-radius: 2px;
+    background-color: indianred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.right-content {
+    width: 40%;
+}
+
+.right-content img {
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0px #cdeef7;
+}
+
+
+#box {
+    /* background-color: brown; */
+    /* background-color: rgb(255, 25, 20); */
+    /* background-color: rgba(255, 25, 120, 1); */
+    /* background-color: #18f; */
+    /* background-color: #118ff2; */
+    color: white;
+    height: 500px;
+    width: 800px;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .box {
+        background-color: green;
+        height: 300px;
+        width: 350px;
+    }
+
+    .box h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 20px 30px;
+        align-items: center;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+
+    .left-content h1 {
+        width: 100%;
+        font-size: 45px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .left-content p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-content button {
+        transform: translateX(50%);
+    }
+
+    .right-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .box {
+        background-color: blue;
+        height: 400px;
+        width: 450px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .box {
+        background-color: red;
+        height: 500px;
+        width: 700px;
+    }
+}
