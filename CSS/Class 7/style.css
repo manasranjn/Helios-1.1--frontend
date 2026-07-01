@@ -1,0 +1,36 @@
+a {
+    color: black;
+}
+
+a:visited {
+    color: rebeccapurple;
+}
+
+.para {
+    font-size: 35px;
+}
+
+.para::after {
+    content: "Text added";
+    color: red;
+}
+
+/* .para::before {
+    content: "Text added";
+    color: green;
+} */
+
+.para::first-letter {
+    color: red;
+    font-size: 50px;
+}
+
+.para::first-line {
+    color: blue;
+    /* font-size: 50px; */
+}
+
+input::placeholder {
+    color: red;
+    font-style: italic;
+}
