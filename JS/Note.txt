@@ -452,7 +452,7 @@ Syntax:- node.eventHandler = () => { // handle here }
 The Event Object is a special object in JavaScript that contains details about an event that occurs, such as a button click, mouse movement, or keyboard press. 
 -All event handlers have access to the event object, which provides various properties and methods.
 Syntax:
-node.event = (e) => {
+node.eventHandler = (e) => {
 // handle event here
 }
 -Some common properties of Event Object (`e`):
