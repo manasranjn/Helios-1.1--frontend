@@ -492,7 +492,7 @@ Key Points:
 
 ## Asynchronous :-
 -Due to synchronous programming , sometimes imp. instruction get blocked due to some previous instruction, which couses a delay in the UI.
--Asynchronous code execution allows to execute next instruction immediatelly and doesn't block the flow.
+-Asynchronous code execution allows to execute the next instruction parallelly and doesn't block the flow.
 
 # Callback Hell:-
 -Callback hell refers to a situation where multiple nested callbacks are used in asynchronous JavaScript, forming a pyramid-like structure. This makes the code difficult to read, debug, and maintain.
