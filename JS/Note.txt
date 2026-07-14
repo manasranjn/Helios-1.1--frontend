@@ -533,7 +533,7 @@ syntax :- let promise = fetch(URL)
 # Async & Await in Javascript :-
 async function  always returns a promise.
 syntax :- async function myFunc(){ // statement }
-Note :- await pauses the execution of its surrounding async function until the promise is settled.
+Note :- await pauses the execution of its surrounding async function until the promise/process is settled.
 
 # Hoisting in JS:- Hoisting is JavaScript’s default behavior of moving declarations (not initializations) to the top of their scope
 - It allows you to use variables and functions before they are declared in the code.
