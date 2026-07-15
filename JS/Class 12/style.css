@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Belleza", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1F6FA;
+    padding: 10px 100px;
+    align-items: center;
+}
+
+header a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    padding: 10px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMenu {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90vh;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+    padding: 50px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.navMenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.navMenu ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navMenu button {
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #003438;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+
+
+.logo img {
+    height: 70px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.menu button {
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #003438;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.menu i {
+    display: none;
+}
+
+.hero {
+    padding: 80px;
+    background-image: url('./images/7ba8dc708e4d1e0bded433d3dfb8dbcd10ba1e96.jpg');
+    height: 70vh;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 38px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h2 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.bg {
+    background: linear-gradient(to bottom, #00191B, #FFFFFF50);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-us {
+    padding: 100px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .images {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.about-us .images img {
+    width: 100%;
+}
+
+.about-us .content {
+    width: 50%;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display: none;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu i {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    header a {
+        margin: 0 5px;
+    }
+
+    nav {
+        padding: 10px 30px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu i {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .hero {
+        padding: 80px 20px;
+        height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+}
