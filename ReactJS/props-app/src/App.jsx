@@ -1,10 +1,13 @@
 import React from "react";
 import AllProducts from "./Components/AllProducts";
+import AllStudents from "./Components/AllStudents";
 
 const App = () => {
   return (
     <div>
-      <AllProducts />
+      {/* <AllProducts /> */}
+
+      <AllStudents name="Smith" age={20} gender="male" />
     </div>
   );
 };
